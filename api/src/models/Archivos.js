@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
             },
             link: {
                 field: 'LINK_ARCH',
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 allowNull: false,
             },
         },
