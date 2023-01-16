@@ -9,4 +9,4 @@ conn.sync({ force: true }).then(() => {
   });
 });
 
-//a don culón le gusta la pinga y media
+//    KUC
