@@ -17,6 +17,7 @@ module.exports = (sequelize) => {
         field: 'NOMBRE_ROLE',
         type: DataTypes.STRING(30),
         allowNull: false,
+        unique: true,
       },
       admin: {
         field: 'ADMIN_ROLE',
