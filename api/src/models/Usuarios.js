@@ -16,11 +16,12 @@ module.exports = (sequelize) => {
       correo: {
         field: "CORREO_USER",
         type: DataTypes.STRING(40),
+        unique: true,
         allowNull: false,
       },
       clave: {
         field: "CLAVE_USER",
-        type: DataTypes.STRING(40),
+        type: DataTypes.STRING,
         allowNull: false,
       },
       nombre: {
@@ -37,6 +38,11 @@ module.exports = (sequelize) => {
         field: "TELEFONO_USER",
         type: DataTypes.STRING(20),
         allowNull: true,
+      },
+      verificado: {
+        field: "VERIFICADO_USER",
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
       },
       bloqueado: {
         field: "BLOQUEADO_USER",

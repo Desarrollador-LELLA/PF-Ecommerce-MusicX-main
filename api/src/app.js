@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const rutaTester = require('./routes/rutaTester.js');
+const authRouter = require('./routes/authRouter');
 
 require('./db.js');
 
@@ -16,10 +17,10 @@ server.use(cookieParser());
 server.use(morgan('dev'));
 
 //LINK PERMITIDAS A LAS CORS
-//url : https://pi-pokemon-main-beta.vercel.app
+//url : 
 //local : http://localhost:3000
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://pi-pokemon-main-beta.vercel.app'); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000'); // update to match the domain you will make the request from
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
@@ -28,6 +29,8 @@ server.use((req, res, next) => {
 
 //ASIGNACION DE RUTAS
 server.use('/tester', rutaTester);
+
+server.use('/auth', authRouter);
 
 // Error catching endware.
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars

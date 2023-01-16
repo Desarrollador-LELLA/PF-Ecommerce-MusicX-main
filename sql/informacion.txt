@@ -1,0 +1,48 @@
+1 primer paso
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCGZ-gN4lQDU5rVulmSIzjQAfYckyw99rI",
+  authDomain: "orion-proyect.firebaseapp.com",
+  projectId: "orion-proyect",
+  storageBucket: "orion-proyect.appspot.com",
+  messagingSenderId: "463820897424",
+  appId: "1:463820897424:web:3943943d08f882d926ac15",
+  measurementId: "G-GQVLC1QBDG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+2 segundo paso
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCGZ-gN4lQDU5rVulmSIzjQAfYckyw99rI",
+  authDomain: "orion-proyect.firebaseapp.com",
+  projectId: "orion-proyect",
+  storageBucket: "orion-proyect.appspot.com",
+  messagingSenderId: "463820897424",
+  appId: "1:463820897424:web:3943943d08f882d926ac15",
+  measurementId: "G-GQVLC1QBDG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
